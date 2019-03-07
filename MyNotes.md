@@ -31,4 +31,4 @@ return <h1 style={{ color: "#FF8C00" }}>Good {timeOfDay}!</h1>;
 
 # Output of inline styling
 
-![Output](images-ml/inline-style.JPG)
+![Output](/images-ml/inline-style.JPG)
