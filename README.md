@@ -1,3 +1,7 @@
+## You can find my notes related to React here:
+
+[Link to my notes](/MyNotes.md)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
