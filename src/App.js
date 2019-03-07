@@ -3,26 +3,19 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  return (
-    <div>
-      <p>List</p>
-      <input type="checkbox" value="1" name="1" />
-      <span>Option 1</span>
-      <br />
-      <input type="checkbox" value="2" name="2" />
-      <span>Option 2</span>
-      <br />
-      <input type="checkbox" value="3" name="3" />
-      <span>Option 3</span>
-      <br />
-      <input type="checkbox" value="4" name="4" />
-      <span>Option 4</span>
-      <br />
-      <input type="checkbox" value="5" name="5" />
-      <span>Option 5</span>
-      <br />
-    </div>
-  );
+  const date = new Date();
+  const hours = date.getHours();
+  let timeOfDay;
+
+  if (hours < 12) {
+    timeOfDay = "morning";
+  } else if (hours >= 12 && hours < 17) {
+    timeOfDay = "afternoon";
+  } else {
+    timeOfDay = "night";
+  }
+
+  return <h1 style={{ color: "#FF8C00" }}>Good {timeOfDay}!</h1>;
 }
 
 export default App;
