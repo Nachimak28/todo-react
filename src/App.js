@@ -14,8 +14,13 @@ function App() {
   } else {
     timeOfDay = "night";
   }
+  const styles = {
+    color: "#FF8C00",
+    backgroundColor: "#000000",
+    margin: 0
+  };
 
-  return <h1 style={{ color: "#FF8C00" }}>Good {timeOfDay}!</h1>;
+  return <h1 style={styles}>Good {timeOfDay}!</h1>;
 }
 
 export default App;
